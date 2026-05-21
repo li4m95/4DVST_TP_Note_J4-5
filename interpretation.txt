@@ -1,0 +1,58 @@
+Analyse des discours d'investiture américains
+58 discours, de Washington (1789) a Trump (2017)
+=================================================
+
+
+1. Sentiment général
+---------------------
+
+Sans grande surprise, presque tous les discours ressortent positifs (57 sur 58).
+C'est logique : quand un président prend la parole le jour de son investiture,
+il cherche avant tout a rassurer et a motiver le peuple, pas a se plaindre.
+
+Le seul discours négatif c'est celui de Lincoln en 1865. A ce moment la le pays
+est en pleine guerre civile depuis 4 ans, donc forcément le ton est plus sombre,
+il parle beaucoup de souffrance et de sacrifice.
+
+Petite limite a noter : VADER marche mieux sur des textes courts type tweets.
+Sur les grands discours du 19ème siècle il sature vite a 1.0, du coup les résultats
+sont un peu moins fiables pour cette période.
+
+
+2. Les mots qui reviennent le plus
+------------------------------------
+
+Les mots les plus fréquents sont les mêmes chez presque tous les présidents :
+"nation", "people", "government", "country"... Pas vraiment étonnant, ces mots
+résument assez bien ce dont parle un discours présidentiel depuis 200 ans.
+
+Ce qui est plus intéressant c'est de regarder les mots spécifiques a chaque époque,
+c'est la qu'intervient le TF-IDF.
+
+
+3. TF-IDF — ce qui distingue vraiment chaque président
+--------------------------------------------------------
+
+Lincoln (1861-1865) : les mots les plus caractéristiques sont "slave", "war",
+"fugitive", "insurgent". Ca reflète directement la crise de l'esclavage et la
+guerre civile qui déchire le pays a ce moment la.
+
+Obama (2009-2013) : on retrouve "journey", "creed", "generation", "together".
+Un vocabulaire tourné vers l'avenir et le collectif, cohérent avec son image
+de candidat du changement et de l'unité nationale.
+
+Trump (2017) : le mot "america" écrase tout avec un score presque 2x plus élevé
+que les autres mots. Suivi de "dream", "job", "back". Le discours "Make America
+Great Again" se lit clairement dans les données.
+
+
+4. Ce qu'on peut en retenir
+-----------------------------
+
+Les discours inauguraux ont une structure quasi universelle : ils sont toujours
+positifs, toujours centrés sur l'unité. Mais le TF-IDF montre que derrière ce
+cadre commun, chaque président laisse une empreinte lexicale propre a son époque.
+
+Lincoln parle de guerre et d'esclavage, Obama d'espoir et de transmission,
+Trump de retour a la grandeur économique. En gros le fond change même si la forme
+reste la même depuis 200 ans.
